@@ -1,3 +1,4 @@
+import React from 'react';
 
 function Equipo({ title, imageSrc, description, githubLink, linkedinLink }) {
     return (

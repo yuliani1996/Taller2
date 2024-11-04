@@ -1,14 +1,14 @@
-import Equipo from '../components/Equipo';
-import FotoAnyi from '../assets/imagenes/FotoAnyi.png';
-import FotoAndrea from '../assets/imagenes/FotoAndrea.png';
-import FotoJulieth from '../assets/imagenes/FotoJulieth.png';
-import '../styles/cards.css';
+import React from 'react';
+import Equipo from './componentes/Equipo';
+import FotoAnyi from './imagenes/FotoAnyi.png';
+import FotoAndrea from './imagenes/FotoAndrea.png';
+import FotoJulieth from './imagenes/FotoJulieth.png';
+import './App.css';
+import PokeAPI from './componentes/PokeApi';
 
-import Inicio from '../pages/Inicio';
 
 function App() {
     return (
-      <>
         <div>
         <h1>Proyecto de Listado y Modificación de Productos </h1>
         <h3>Miembros del Equipo</h3>
@@ -24,7 +24,7 @@ function App() {
                 imageSrc={FotoAndrea}
                 description="Estudiante de Análisis y Desarrollo de Software, con enfoque en el diseño, implementación y optimización de aplicaciones tecnológicas."
                 githubLink="https://github.com/AndreaCSalazar"
-                linkedinLink="https://www.linkedin.com/in/andrea-contreras-salazar?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                linkedinLink=""
             />
             <Equipo
                 title="Julieth Ballesteros"
@@ -33,12 +33,11 @@ function App() {
                 githubLink="https://github.com/Julieth14-maker"
                 linkedinLink="https://linkedin.com/in/usuario"
             />
-            
-            <Inicio/>
-  
+            <PokeAPI/>
         </div>
-      </>
     );
 }
 
 export default App;
+
+
